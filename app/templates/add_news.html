@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}
+{{news.name}}
+{% endblock title %}
+{% block content %}
+<h2>Add news</h2>
+<hr>
+<form action="" method="post" novalidate>
+      {{ form.csrf_token }}
+    <p>News name</p>
+    {{form.name_post}}
+    <p>URL page</p>
+    {{form.url}}
+    <p>News text</p>
+    {{form.text_post}}
+    <p></p>
+<p></p>
+    {{form.submit(class="btn btn-primary")}}
+</form>
+{% endblock content %}

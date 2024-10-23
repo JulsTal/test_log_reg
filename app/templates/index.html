@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+{% endblock title %}
+{% block content %}
+<h1>Login Flask authentification System</h1>
+<h1><a href="{{url_for('login')}}">Login page</a></h1>
+
+<h1><a href="{{url_for('news')}}">Новостной портал</a> </h1>
+<a href="{{url_for('logout')}}" class="text-decoration:mone">Завершить сессию</a>
+<h1><a href="{{url_for('kiwi_page')}}">Киви</a> </h1>
+
+{% endblock content %}
