@@ -69,7 +69,7 @@ def news_more(alias):
     return render_template('news_more.html', title=t, post=p)
 @app.route('/', methods=['GET','POST'])
 def index():
-    print("I am ok")
+
     return render_template('index.html')
 @app.route('/add_news', methods=['GET','POST'])
 @login_required
